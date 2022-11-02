@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="Fan Made Exp Calculator for DelugeRPG" name="description">
+	<meta content="delugerpg, exp calculator, delugerpg exp, exact exp delugerpg, 100k exact exp, 100k exact exp calculator, aihvz calculator, Aihvz, aihvz, aenan, magikarp calculator" name="keywords">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>Aihvz's 100k Exp Calculator for DelugeRPG</title>
+	<link href="aihvz.ico" rel="shortcut icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+	<link href="../style.css?v=2" media="screen" rel="stylesheet">
+</head>
+<body>
+
+
+<div id="dvCountDown" style="font-size:25px; text-align:center; 
+	left: 0;
+    margin-top: -100px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;">
+You will be redirected in <br> 100K Exp Calculator
+after <span id="lblCount"></span>&nbsp;seconds.
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script type="text/javascript">
+$(function () {
+   
+        var seconds = 3;
+        $("#dvCountDown").show();
+        $("#lblCount").html(seconds);
+        setInterval(function () {
+            seconds--;
+            $("#lblCount").html(seconds);
+            if (seconds == 0) {
+                $("#dvCountDown").hide();
+                window.location = "https://aihvz.github.io/100kExpCalc/";
+            }
+        }, 1000);
+		
+   
+});
+</script>
+
+
+</body>
+</html>
